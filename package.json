@@ -1,0 +1,38 @@
+{
+  "name": "social_mern_app",
+  "version": "1.0.0",
+  "description": "Mern Social App",
+  "main": "index.js",
+  "scripts": {
+    "development": "nodemon"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "mongodb",
+    "flutter",
+    "mobile",
+    "ios",
+    "android"
+  ],
+  "author": "Samuel Santos",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "babel-loader": "^9.1.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "loadsh": "^0.0.4",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.3.4",
+    "nodemon": "^3.1.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
