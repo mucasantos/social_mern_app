@@ -10,4 +10,6 @@ router.route('/auth/signout')
     .post(authContrl.signout)
 
 
+
+
 export default router
