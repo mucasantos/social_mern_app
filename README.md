@@ -17,6 +17,7 @@
     Delete a user  | /api/user/:userId  | DELETE
     
 # Third step
-
+    Integrating user auth and protected routes
 # Fourth step
+
 # social_mern_app

@@ -11,6 +11,7 @@ router.route('/api/users/:userId')
     .put(userCtrl.update)
     .delete(userCtrl.remove)
 
+    //Verica se tem param na rota!
 router.param('userId', userCtrl.userByID)
 
 

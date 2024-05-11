@@ -4,10 +4,9 @@ import extend from 'lodash/extend'
 import errorHandler from '../helpers/dbErrorHandler'
 
 const create = async (req, res) => {
-
-
     console.log(req.body);
     const user = new User(req.body)
+
     try {
         await user.save()
         return res.status(200).json({
@@ -33,6 +32,8 @@ const list = async (req, res) => {
     }
 }
 const userByID = async (req, res, next, id) => {
+
+    console.log(id);
     try {
         let user = await User.findById(id)
         if (!user) {
@@ -42,7 +43,7 @@ const userByID = async (req, res, next, id) => {
         }
         //Read the user and call next controller function (read)
         req.profile = user
-        next()
+        next()  //Chama o próximo método!
     } catch (error) {
         return res.status(400).json({
             error: "Could not retrieve User!"
@@ -57,6 +58,8 @@ const read = (req, res) => {
     return res.status(200).json(req.profile)
 }
 const update = async(req, res, next) => { 
+
+    console.log("Vamos fazer o update!!");
     try {
         let user = req.profile
         user = extend(user, req.body)
